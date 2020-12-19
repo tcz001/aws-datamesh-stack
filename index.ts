@@ -20,14 +20,13 @@ for (let i = 0; i < input_config.count; i++){
 }
 for (let i = 0; i < output_config.count; i++){
    const output_bucket = new aws.s3.Bucket(`mesh-output-bucket-${i}`);
-   output_ports.push(input_bucket.id);
+   output_ports.push(output_bucket.id);
 }
 for (let i = 0; i < pipeline_config.count; i++){
    const pipeline = new aws.datapipeline.Pipeline(`mesh-pipeline-${i}`, {});
-   pipelines.push(input_bucket.id);
+   pipelines.push(pipeline.id);
 }
-names.push(output_bucket.id);
-// Export the name of the buckets
+// Export the name of the mesh resources
 export const inputPortsIds = input_ports;
 export const outputPortsIds = output_ports;
 export const pipelineIds = pipelines;

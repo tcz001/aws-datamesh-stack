@@ -4,5 +4,5 @@ config:
     count: 2
   proj:output:
     count: 1
-  proj:pipeline:
+  proj:pipeline: 
     count: 1
