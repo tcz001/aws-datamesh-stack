@@ -4,8 +4,8 @@ import * as awsx from "@pulumi/awsx";
 
 // Create an AWS resource (S3 Bucket)
 const names = [];
-const input_bucket = new aws.s3.Bucket(`mesh-input-bucket-${i}`);
-const output_bucket = new aws.s3.Bucket(`mesh-output-bucket-${i}`);
+const input_bucket = new aws.s3.Bucket(`mesh-input-bucket`);
+const output_bucket = new aws.s3.Bucket(`mesh-output-bucket`);
 names.push(input_bucket.id);
 names.push(output_bucket.id);
 // Export the name of the buckets
