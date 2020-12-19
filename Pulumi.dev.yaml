@@ -1,8 +1,8 @@
 config:
   aws:region: us-east-1
-  proj:input:
+  datamesh:input:
     count: 2
-  proj:output:
+  datamesh:output:
     count: 1
-  proj:pipeline: 
+  datamesh:pipeline: 
     count: 1
