@@ -1,2 +1,11 @@
 config:
   aws:region: us-east-1
+  proj:input:
+    type: s3
+    count: 2
+  proj:output:
+    type: s3
+    count: 1
+  proj:pipeline:
+    type: datapipeline
+    count: 1
