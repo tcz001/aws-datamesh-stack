@@ -1,5 +1,5 @@
 {
-    "name": "s3-op-project",
+    "name": "aws-datamesh-stack",
     "devDependencies": {
         "@types/node": "^10.0.0"
     },
