@@ -7,7 +7,6 @@ const input_ports = [];
 const output_ports = [];
 const pipelines = [];
 interface Config {
-    type: string;
     count: number;
 }
 
