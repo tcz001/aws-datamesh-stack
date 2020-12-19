@@ -1,5 +1,8 @@
 config:
   aws:region: us-east-1
-  proj:input:count: 2
-  proj:output:count: 1
-  proj:pipeline:count: 1
+  proj:input:
+    count: 2
+  proj:output:
+    count: 1
+  proj:pipeline:
+    count: 1
